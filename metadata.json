@@ -1,0 +1,6 @@
+{
+  "name": "E-Waste Kochi Blog & Knowledge Base",
+  "description": "Premium knowledge infrastructure, blogs, and certified API tools for data destruction, compliance, and laptop disposal in Kochi and Kerala.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
