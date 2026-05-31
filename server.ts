@@ -1,3 +1,4 @@
+import "dotenv/config";
 import express from "express";
 import path from "path";
 import fs from "fs";
@@ -179,7 +180,7 @@ Do NOT include markdown backticks around the JSON string.
 `;
 
     const response = await client.models.generateContent({
-      model: "gemini-3.5-flash",
+      model: "gemini-2.0-flash",
       contents: prompt,
       config: {
         responseMimeType: "application/json",
@@ -514,6 +515,13 @@ app.get("/sitemaps/images.xml", (req, res) => {
   </url>`;
   }).join("\n");
 
+  const xmlOutput = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+${urls}
+</urlset>`;
+  res.header("Content-Type", "application/xml");
+  res.send(xmlOutput);
 });
 
 // 2.6 llms.txt & llms-full.txt routes for AI Agent context
@@ -791,7 +799,7 @@ Do NOT include markdown backticks around the JSON string.
 `;
 
     const response = await client.models.generateContent({
-      model: "gemini-3.5-flash",
+      model: "gemini-2.0-flash",
       contents: prompt,
       config: {
         responseMimeType: "application/json",
@@ -954,7 +962,7 @@ Rules:
     }));
 
     const response = await client.models.generateContent({
-      model: "gemini-3.5-flash",
+      model: "gemini-2.0-flash",
       contents: geminiContents,
       config: {
         systemInstruction: systemPrompt,

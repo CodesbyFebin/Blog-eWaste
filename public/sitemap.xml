@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://blog.ewastekochi.com/sitemaps/services.xml</loc>
+    <lastmod>2026-06-01</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://blog.ewastekochi.com/sitemaps/articles.xml</loc>
+    <lastmod>2026-06-01</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://blog.ewastekochi.com/sitemaps/entities.xml</loc>
+    <lastmod>2026-06-01</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://blog.ewastekochi.com/sitemaps/glossary.xml</loc>
+    <lastmod>2026-06-01</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://blog.ewastekochi.com/sitemaps/images.xml</loc>
+    <lastmod>2026-06-01</lastmod>
+  </sitemap>
+</sitemapindex>
