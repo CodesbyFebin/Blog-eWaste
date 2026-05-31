@@ -88,7 +88,7 @@ function getGeminiClient(): GoogleGenAI | null {
           apiKey: key,
           httpOptions: {
             headers: {
-              'User-Agent': 'aistudio-build',
+              'User-Agent': 'ewastekochi-blog/1.0',
             }
           }
         });
